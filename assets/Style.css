@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    display:grid;
+    grid-template-areas:
+    'encabezado encabezado encabezado'
+    'menu principal principal'
+    'pie pie pie'
+    ;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 5% 90% 5%;
+    height: 100vh;
+
+  
+}
+
+header {
+    background-color: rgba(0, 76, 190, 0.877);
+    grid-area: encabezado;
+}
+aside {
+
+    background-color: rgb(179, 179, 179)
+    ;
+    grid-area: menu;
+}
+main {
+    background-color: rgb(179, 179, 179);
+    grid-area: principal;
+    overflow: scroll;
+   
+
+}
+footer {
+    background-color: rgb(179, 179, 179)
+    ;
+    grid-area: pie;
+}
+.cabeza{
+    text-align: center;
+    align-content: center;
+    color: white;
+
+}
+
+
+/*  Tarjetas  */
+
+.tarjeta-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    
+ 
+}
+
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    width: 30%;
+    
+    
+  
+   
+   
+}
+
+.tarjeta img{
+  
+   
+    min-height: 400px;
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+    
+    
+    
+
+}
+
+.nombre-t {
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+}
+
+.precio-T {
+    text-align: center;
+    height: 40px;
+}
+
+.button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 14px;
+    background-color: rgba(0, 76, 190, 0.877);;
+
+}
+
+/*  Categorias  */
+
+.lista-categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px;
+}
+
+.lista{
+    margin: 10%;
+    list-style: none;
+}
+
+span{
+    opacity: 0.5;
+}
+
+.categorias{
+    text-align: end;
+}
